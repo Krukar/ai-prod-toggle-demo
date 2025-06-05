@@ -22,9 +22,9 @@ export default function Component() {
 
     return (
         <div>
-            <div className="fixed top-8 right-8">
+            <div className="fixed top-0 right-0 p-8 md:p-9 lg:p-10">
                 <button
-                    className="h-10 hover:opacity-50 focus:opacity-50 cursor-pointer transition"
+                    className="h-6 md:h-7 lg:h-8 hover:opacity-50 focus:opacity-50 cursor-pointer transition"
                     onClick={() => handle_click()}
                 >
                     {dark_mode ? <Moon /> : <Sun />}
