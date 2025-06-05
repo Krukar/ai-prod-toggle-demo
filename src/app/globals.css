@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+:root {
+    --dark: #0c0a09;
+    --light: #fafaf9;
+}
+
+@theme inline {
+    --color-background: var(--dark);
+    --color-foreground: var(--light);
+    --font-display: var(--font-audio-wide);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: var(--light);
+        --foreground: var(--dark);
+    }
+}
+
+body {
+    background: var(--dark);
+    color: var(--light);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body.dark {
+    background: var(--light);
+    color: var(--dark);
+}
