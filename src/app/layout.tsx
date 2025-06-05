@@ -3,6 +3,7 @@ import { Audiowide } from 'next/font/google';
 import './globals.css';
 
 const audioWide = Audiowide({
+    subsets: ['latin'],
     variable: '--font-audio-wide',
     weight: '400',
 });

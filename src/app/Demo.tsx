@@ -15,7 +15,9 @@ export default function Component() {
 
         document.body.classList.toggle('dark');
 
-        if (document.activeElement) document.activeElement.blur();
+        if (document.activeElement instanceof HTMLElement) {
+            document.activeElement.blur();
+        }
     };
 
     return (
